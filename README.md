@@ -65,6 +65,18 @@ The repository consists of the following directories:
 
 This section contains a description of the two (novel) file formats used in this projects: `.raw-observations` and `.calls`. 
 
+### .haplotypes
+
+This data structure is used to compress the relevant haplotype data from a VCF file, see `bin/extract-haplotypes.py`. Each variant consists of two lines. The first line contains the data on the variant (type, reference and alternative allele etc). The second line is the sequence of binary values representing the presence of the reference allele (1) or the alternative allele (0). 
+
+The first line is structured as follows (space-separated): 
+
+	<chr> <type> <pos> <length> <ref> <alt> <n> <af> 
+
+where `<chr>` is the chromosome on which the SNP resides. `<type>` is equal to `+` in case of an insertion, `-` in case of a deletion, `*` is case of a SNP and `!` in case of a GWAS SNP. `<position>` is the position of the SNP as given in the VCF file. The field `<length>` is only used in case of an indel and gives the length. `<ref>` and `<alt>` are the reference and the alternative alleles (in case of a deletion/insertion, we just use `.`'s). `<n>` is the number of haplotypes present (996 in our case, since we consider the parents). `<af>` is the allele frequency of the reference allele. In case of a deletion, `<af>` is the frequency with which the deletion occurs. 
+
+The second line is just a sequence of binary values of length `<n>`. There is no space. `1` denotes that the reference allele/deletion is present.
+
 ### .pairs
 
 This file format is used for representing SNP-deletion pairs. The first line always represents a SNP; the lines that follow contain the data on deletions in the vicinity of the SNP. The number of deletions that follow the SNP may vary. The data on the SNP is structured as (space-separated):
