@@ -45,7 +45,7 @@ The executables `gonl_create_pairs`, `gonl_imputation` and `gonl_tag_deletions` 
 
 The repository consists of the following directories: 
 
-* `backup/` - contains some older versions of the project. 
+* `back-up/` - contains some older versions of the project. 
 
 * `bin/` - contains the Python scripts and executables used for calling the somatic mutations. 
 
@@ -54,12 +54,6 @@ The repository consists of the following directories:
 * `include/` - contains the header files for the C-code.
 
 * `matlab/` - contains some Matlab code for plotting the results. 
-
-* `paper/` - some texts and plots for the GoNL-SV paper. 
-
-* `presentations/` - some presentations for the TC meetings on the results. 
-
-* `plots/` - LaTeX files for the figures.
 
 * `results/` - contains various (intermediate) results. The actual results are not in the repository (due to their size) but can be reproduced with the original VCF files and the present scripts/code. 
 
