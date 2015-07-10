@@ -1,0 +1,7 @@
+// the configured options and settings
+#define gonl_tag_deletions_VERSION_MAJOR @gonl_tag_deletions_VERSION_MAJOR@
+#define gonl_tag_deletions_VERSION_MINOR @gonl_tag_deletions_VERSION_MINOR@
+#define gonl_create_pairs_VERSION_MAJOR @gonl_create_pairs_VERSION_MAJOR@
+#define gonl_create_pairs_VERSION_MINOR @gonl_create_pairs_VERSION_MINOR@
+
+

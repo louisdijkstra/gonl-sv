@@ -1,0 +1,1 @@
+src/gonl_create_pairs data/gonl-snps/snps.parents.chr3.a0.04.filtered.gwas.hg19.haplotypes data/gonl-deletions/deletions.parents.chr3.a0.04.haplotypes > /export/scratch3/dijkstra/gonl-sv/results/snp-deletion-pairs/snp_deletion.parents.chr3.a0.04_0.04.pairs

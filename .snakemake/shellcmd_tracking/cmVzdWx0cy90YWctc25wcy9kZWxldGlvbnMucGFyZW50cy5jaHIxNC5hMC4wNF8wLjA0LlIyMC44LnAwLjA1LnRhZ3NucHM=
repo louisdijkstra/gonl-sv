@@ -1,0 +1,1 @@
+src/gonl_tag_deletions -r 0.8 -p 0.05 data/gonl-deletions/deletions.parents.chr14.a0.04.haplotypes data/gonl-snps/snps.parents.chr14.a0.04.filtered.gwas.hg19.haplotypes > results/tag-snps/deletions.parents.chr14.a0.04_0.04.R20.8.p0.05.tagsnps
